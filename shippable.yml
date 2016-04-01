@@ -9,7 +9,7 @@ before_script:
 
 env:
     global:
-      - OPENSHIFT_REPO_MASTER=ssh://56ebef512d527104f5000100@samplephpi-unab2016.rhcloud.com/~/git/samplephpi.git/
+      - OPENSHIFT_REPO_MASTER=ssh://56fe89597628e18b9b000012@php-unab20161.rhcloud.com/~/git/php.git/
 
 before_install:
     - git remote -v | grep ^openshift_master || git remote add -m master openshift_master $OPENSHIFT_REPO_MASTER
